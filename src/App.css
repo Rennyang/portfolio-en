@@ -68,7 +68,7 @@
   }
 
   .title {
-    @apply md: text-3xl text-2xl;
+    @apply text-3xl text-2xl;
   }
 
   .subtitle {
@@ -449,10 +449,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 
 .react-multi-carousel-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  position: relative;
+  position: inherit;
+  justify-content: space-between;
 }
 
 @keyframes updown {

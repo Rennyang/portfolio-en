@@ -1,6 +1,5 @@
 import vite from "../assets/Logos/vite.svg";
 import figma from "../assets/Logos/figma.svg";
-import python from "../assets/Logos/python.svg";
 import mern from '../assets/Logos/mern.png'
 import mongo from '../assets/Logos/mongodb.svg'
 import express2 from '../assets/Logos/expressjs-dark.svg'
@@ -54,15 +53,11 @@ export const Skills = () => {
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={vite} alt="Image" style={{ maxHeight: "111.5px" }} />
-                  <h5>Web Development</h5>
+                  <h5>React</h5>
                 </div>
                 <div className="item">
                   <img src={figma} alt="Image" style={{ maxHeight: "111.5px" }} />
                   <h5>Web Design</h5>
-                </div>
-                <div className="item">
-                  <img src={python} alt="Image" style={{ maxHeight: "111.5px" }} />
-                  <h5>Data Analysis</h5>
                 </div>
                 <div className="item">
                   <img src={mern} alt="Image" style={{ maxHeight: "111.5px" }} />
@@ -70,7 +65,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={mongo} alt="Image" style={{ maxHeight: "111.5px" }} />
-                  <h5>MongoDB</h5>
+                  <h5>Mongo</h5>
                 </div>
                 <div className="item">
                   <img src={express2} alt="Image" style={{ maxHeight: "111.5px" }} />
@@ -82,7 +77,7 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={node} alt="Image" style={{ maxHeight: "111.5px" }} />
-                  <h5>NodeJS</h5>
+                  <h5>Node</h5>
                 </div>
                 <div className="item">
                   <img src={tailwind} alt="Image" style={{ maxHeight: "111.5px" }} />

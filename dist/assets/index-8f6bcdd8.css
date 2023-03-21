@@ -18031,8 +18031,8 @@ fieldset:disabled .btn {
     display: flex;
     align-items: center;
     overflow: hidden;
-    position: relative;
-    justify-content: space-between
+    position: inherit;
+    justify-content: space-between;
 }
 
 .react-multi-carousel-track {
