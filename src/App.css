@@ -25,50 +25,59 @@
 
 @layer base {
   html {
-   scroll-behavior: smooth;
- }
- h2,
- h3,
- h5,
- h6,
- p {
-   @apply text-dark_primary;
- }
- h2 {
-   @apply font-Inria text-5xl font-bold;
- }
- h3 {
-   @apply font-Paprika text-5xl;
- }
- h6 {
-   @apply font-Paprika font-bold text-[#253D57] leading-8;
- }
- p {
-   @apply font-Poppins text-[0.95rem];
- }
- button {
-   @apply font-Poppins;
- }
- input,
- textarea {
-   @apply bg-transparent outline-none font-Poppins;
- }
+    scroll-behavior: smooth;
+  }
+
+  h2,
+  h3,
+  h5,
+  h6,
+  p {
+    @apply text-dark_primary;
+  }
+
+  h2 {
+    @apply font-Inria text-5xl font-bold;
+  }
+
+  h3 {
+    @apply font-Paprika text-5xl;
+  }
+
+  h6 {
+    @apply font-Paprika font-bold text-[#253D57] leading-8;
+  }
+
+  p {
+    @apply font-Poppins text-[0.95rem];
+  }
+
+  button {
+    @apply font-Poppins;
+  }
+
+  input,
+  textarea {
+    @apply bg-transparent outline-none font-Poppins;
+  }
 }
 
 @layer utilities {
- .btn {
-   @apply py-2 px-9 border-2 rounded-md
-    border-dark_primary rounded-br-3xl font-medium;
- }
- .title{
-   @apply md:text-3xl text-2xl;
- }
- .subtitle{
-   @apply text-gray;
- }
+  .btn {
+    @apply py-2 px-9 border-2 rounded-md border-dark_primary rounded-br-3xl font-medium;
+  }
+
+  .title {
+    @apply md: text-3xl text-2xl;
+  }
+
+  .subtitle {
+    @apply text-gray;
+  }
 }
+
 .swiper-pagination-bullet {
- @apply w-3 h-3 bg-dark_primary;
+  @apply w-3 h-3 bg-dark_primary;
 }
 
 
@@ -438,6 +447,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
   padding: 0;
 }
 
+.react-multi-carousel-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -771,6 +788,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 .contact form button:hover::before {
   width: 100%;
 }
+
 /************ Footer Css ************/
 .footer {
   padding: 20px;

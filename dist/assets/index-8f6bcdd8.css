@@ -18107,7 +18107,7 @@ fieldset:disabled .btn {
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center
+    text-align: center;
 }
 
 .react-multi-carousel-dot button {
@@ -18135,13 +18135,17 @@ fieldset:disabled .btn {
 .react-multi-carousel-item {
     transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media all and (-ms-high-contrast:none),
 (-ms-high-contrast:active) {
     .react-multi-carousel-item {
-        flex-shrink: 0 !important
+        flex-shrink: 0 !important;
+        display: flex;
+        justify-content: space-between;
     }
 
     .react-multi-carousel-track {
