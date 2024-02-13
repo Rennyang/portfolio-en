@@ -1,42 +1,56 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import Pawe from '../assets/img/Pawe.png'
+import Portfolio from '../assets/img/Porfolio.png'
+import Music from '../assets/img/Music.png'
+import Video from '../assets/img/Video.png'
+import Cuerda from '../assets/img/Cuerda.png'
+import Sound from '../assets/img/Sound.png'
+import Marca from '../assets/img/Marca.png'
+import Anefty from '../assets/img/Anefty.png'
+import Spotify from '../assets/img/Spotify.png'
+
+import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
-    
-    
-  ];
-
   const development = [
     {
       title: "Web Developer Portfolio",
       description: "Design & Development",
-      github: "https://github.com/",
-      deploy: "https://netlify.app/",
+      imgUrl: Portfolio,
+      github: "https://github.com/Rennyang/portfolio-en",
+      deploy: "https://rb-portfolio-en.netlify.app/",
     },
     {
-      title: "A & L E-Commerce",
-      description: "Design & Development", 
-      github: "https://github.com/",
-      deploy: "https://netlify.app/",
+      title: "Emulation NTF Anefty Web",
+      description: "Design & Development",
+      imgUrl: Pawe, 
+      github: "https://github.com/Rennyang/nftanefty",
+      deploy: "https://rennyang.github.io/nftanefty/",
     },
     {
-      title: "Game: Wheel of Doom",
-      description: "Game Design",
-      github: "https://github.com/",
-      deploy: "https://netlify.app/",
+      title: "Green Calculator",
+      description: "Design & Development",
+      imgUrl: Cuerda,
+      github: "https://github.com/Rennyang/green-calculator",
+      deploy: "https://rennyang.github.io/green-calculator/",
     },
-  ];
-
-  const single = [ 
     {
-      title: "Spotify Clone",
-      description: "Figma UI Design",
-      github: "https://www.figma.com/",
-      deploy: "https://www.figma.com/",
+      title: "Pokedex",
+      description: "Design & Development",
+      imgUrl: Pokedex,
+      github: "https://github.com/Rennyang/pokedex",
+      deploy: "https://rennyang.github.io/pokedex/",
+    },
+    {
+      title: "Simple Image Menu",
+      description: "Design & Development",
+      imgUrl: Menu,
+      github: "https://github.com/Rennyang/special-menu",
+      deploy: "https://rennyang.github.io/special-menu/",
     },
   ];
 
@@ -49,7 +63,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                  <p>The projects I have done range from the development of Landing Pages, games with a simple interface, static web pages, dynamic web pages, portfolios and simple electronic commerce linked to the WhatsApp API. </p>
+                  <p>The projects I have done range from the development of Landing Pages, games with a simple interface, static web pages, dynamic web pages, portfolios and simple electronic commerce linked to the WhatsApp API. 💻 On the other hand, in the design sector I have experience designing brand manuals, logos, and interface and application mockups. 🎨</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -91,6 +105,20 @@ export const Projects = () => {
                           }
                         </Row>
                     </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                        <Row>
+                          {
+                            design.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
+                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
@@ -98,6 +126,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 }
