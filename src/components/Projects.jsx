@@ -69,12 +69,6 @@ export const Projects = () => {
                     <Nav.Item>
                       <Nav.Link eventKey="first">Apps</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Single Pages</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Figma</Nav.Link>
-                    </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
@@ -90,34 +84,6 @@ export const Projects = () => {
                           })
                         }
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                        <Row>
-                          {
-                            single.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                        <Row>
-                          {
-                            design.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
-                        </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
