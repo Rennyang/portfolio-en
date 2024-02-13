@@ -28,7 +28,6 @@
     scroll-behavior: smooth;
   }
 
-  h2,
   h3,
   h5,
   h6,
@@ -544,7 +543,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 
 .project .nav.nav-pills {
-  width: 72%;
+  width: 25%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -552,7 +551,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 52%;
 }
 
 .project .nav.nav-pills .nav-link {
@@ -884,6 +883,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
   font-size: 14px;
   color: #fcf9ff;
   letter-spacing: 0.5px;
-  margin-top: 20px;
   padding-left: 35%;
 }

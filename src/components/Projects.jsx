@@ -5,10 +5,8 @@ import Portfolio from '../assets/img/Porfolio.png'
 import Music from '../assets/img/Music.png'
 import Video from '../assets/img/Video.png'
 import Cuerda from '../assets/img/Cuerda.png'
-import Sound from '../assets/img/Sound.png'
 import Marca from '../assets/img/Marca.png'
 import Anefty from '../assets/img/Anefty.png'
-import Spotify from '../assets/img/Spotify.png'
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -25,11 +23,18 @@ export const Projects = () => {
       deploy: "https://rb-portfolio-en.netlify.app/",
     },
     {
-      title: "Emulation NTF Anefty Web",
+      title: "Simple HTML&CSS page",
       description: "Design & Development",
-      imgUrl: Pawe, 
-      github: "https://github.com/Rennyang/nftanefty",
-      deploy: "https://rennyang.github.io/nftanefty/",
+      imgUrl: Anefty, 
+      github: "https://github.com/Rennyang/Simple-page",
+      deploy: "https://rennyang.github.io/Simple-page/",
+    },
+    {
+      title: "Rick and Morty API Consume",
+      description: "Design & Development",
+      imgUrl: Music, 
+      github: "https://github.com/Rennyang/rick-api",
+      deploy: "https://rickandmortyapi-rb-consume.netlify.app/",
     },
     {
       title: "Green Calculator",
@@ -39,16 +44,23 @@ export const Projects = () => {
       deploy: "https://rennyang.github.io/green-calculator/",
     },
     {
+      title: "Array Sum",
+      description: "Design & Development",
+      imgUrl: Video,
+      github: "https://github.com/Rennyang/ArraySum",
+      deploy: "https://rb-array-sum.netlify.app/",
+    },
+    {
       title: "Pokedex",
       description: "Design & Development",
-      imgUrl: Pokedex,
+      imgUrl: Pawe,
       github: "https://github.com/Rennyang/pokedex",
       deploy: "https://rennyang.github.io/pokedex/",
     },
     {
       title: "Simple Image Menu",
       description: "Design & Development",
-      imgUrl: Menu,
+      imgUrl: Marca,
       github: "https://github.com/Rennyang/special-menu",
       deploy: "https://rennyang.github.io/special-menu/",
     },

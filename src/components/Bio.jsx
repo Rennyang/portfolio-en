@@ -54,8 +54,10 @@ export const Bio = () => {
                           <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <p>Full-stack developer with intermediate English level. Interest in web development, sustainability, finance and data science. Projects carried out in the design and development of e-commerce and user management pages and project management interfaces. Management of the MERN Stack (Mongo, Express, React and Node) as well as SQL and Responsive Design with CSS, Material UI, Bootstrap and Tailwind.
                               <br></br>
-                              <br></br> I graduated from the Full-Stack Developer Bootcamp at Prográmate-Academy powered by EducaMás, GOYN & Simplon partnership program.</p>
-                            <a href="https://www.canva.com/design/" target="_blank" style={{ color: "white" }}><button style={{ color: "white" }} className="cv_arrow">Get my CV in Spanish  <ArrowRightCircle size={25} style={{ color: "white" }} /></button></a>
+                              <br></br> I graduated from the Full-Stack Developer Bootcamp at Prográmate-Academy powered by EducaMás, GOYN & Simplon partnership program.
+                              <br></br>
+                              <br></br> Now, I'm working at Woombat Consulting Group, a technology consulting company, where I serve as a Jr. Web Development Consultant. </p>
+                            <a href="https://www.canva.com/design/" target="_blank" style={{ color: "white" }}><button style={{ color: "white" }} className="cv_arrow">Get my CV in Spanish<ArrowRightCircle size={25} style={{ color: "white" }} /></button></a>
                           </div>}
                       </TrackVisibility>
                     </Col>
